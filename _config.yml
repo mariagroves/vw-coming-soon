@@ -2,7 +2,7 @@ title: VeganWheels - coming soon!
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Vegan Wheels - a vegan food delivery service based in Glasgow.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/vw-coming-soon" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username:  
