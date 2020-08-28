@@ -1,0 +1,49 @@
+@mixin vertical-align($position) {
+    position:$position;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+@mixin all-transition($time)
+  {
+      transition: all $time;
+      -webkit-transition: all $time;
+}
+
+.footer {
+    width: 35rem;
+    height: 30rem;
+    border-radius: .25rem;
+    background-color: $color-primary-light;
+    padding-left: 11rem;
+    position: absolute;
+    right: -25rem;
+    top: 50%;
+    -webkit-box-shadow: -3px 0px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: -3px 0px 5px 0px rgba(0,0,0,0.2);
+    @include all-transition(0.3s);
+
+    &:hover, &:focus
+    {
+        transform: translate3d(-22rem, 0, 0);
+        animation-timing-function: 1s ease-in;
+    }
+    &__title
+    {
+        top:50%;
+        @include vertical-align(absolute);
+        transform: rotate(270deg);
+        left: .5rem;
+        font-size: 1.4rem;
+        font-weight: bold;
+
+    }
+    h3 {
+        @include vertical-align(absolute);
+        display: block;
+        @include all-transition(0.3s);
+        padding-right: 5rem;
+    }
+}

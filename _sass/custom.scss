@@ -1,0 +1,99 @@
+/*Colours*/
+
+$color-grey: #9BA39F;
+$color-light-grey: #F7FBF9;
+$color-white: #fff;
+$color-black: #36463E;
+$color-primary-dark: #339966;
+$color-primary-medium: #66B38C;
+$color-primary-light: #99CCB3;
+$color-yellow-dark: #FBD359;
+$color-yellow-medium: #FCDE83;
+$color-yellow-light:#FDE9AC;
+$color-red-dark: #DE5E35;
+$color-red-medium: #E68668;
+$color-red-light: #EFAF9A;
+$color-blue: #A7D3E0;
+
+/*Custom Font and Typography*/
+
+@font-face {
+  font-family: 'Leafy';
+  src: url("../leafy.woff") format('woff');
+}
+
+body {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  background-color: $color-primary-medium; 
+}
+
+h1 {
+  font-family: 'Leafy';
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif;
+  color: black;
+}
+
+h2 {
+ font-size: 2rem;
+}
+
+h3 {
+ font-size: 1.8rem;
+}
+
+p {
+ font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.paragraph {
+  margin: 2rem;
+}
+
+.heading {
+  font-size: 5rem;
+}
+
+.subheading {
+  font-size: 4rem;
+}
+
+/*Font Awesome*/
+
+.fa-twitter {
+  color: #38A1F3;
+}
+.fa-youtube {
+  color: red;
+}
+.fa-facebook-f {
+  color: #4267b2;
+}
+.fa-github {
+  color: #ccc;
+}
+.fa-linkedin-in {
+  color: #0077B5;
+}
+
+@import "animate.min";
+@import "home";
+@import "base";
+@import "my-animations";
+@import "navbar";
+@import "footer";
+@import "mixins";

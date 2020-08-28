@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+    <h1 id="coming-soon" class="swirl-in-fwd">Coming soon</h1>
+    {% include navbar.html %}
+    {{ content }}
+    {% include javascripts.html %}
+  </body>
+
+</html>

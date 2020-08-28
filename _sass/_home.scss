@@ -1,0 +1,109 @@
+#coming-soon {
+  color: $color-yellow-dark;
+  font-size: 5rem;
+  position: absolute;
+  right: 9rem;
+  top: 15rem;
+  transform: rotate(45deg);
+}
+
+.heading {
+  width: 45rem;
+  position: absolute;
+  z-index: 10;
+  top: 25rem;
+  right: 48rem;
+  color: $color-black;
+}
+
+.composition__blob--1 {
+  animation: morph1 7s ease-in-out infinite;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  height: 30rem;
+  width: 30rem;
+  transition: all .5s ease-in-out;
+  z-index: 6;
+  position: absolute;
+  top: 9rem;
+  right: 67rem;
+  background-color: $color-yellow-medium;
+  transform: rotate(45deg);
+}
+
+.composition__blob--2 {
+  animation: morph2 5s ease-out infinite;
+  border-radius: 22% 78% 41% 59% / 64% 76% 24% 36%;
+  height: 34rem;
+  width: 36rem;
+  transition: all .5s ease-out;
+  z-index: 5;
+  position: absolute;
+  top: 12rem;
+  right: 45rem;
+  transform: rotate(45deg);
+  background-color: $color-red-light;
+}
+
+.composition__blob--3 {
+  animation: morph3 8s ease-in infinite;
+  border-radius: 49% 51% 23% 77% / 54% 57% 43% 46%;
+  height: 31rem;
+  width: 34rem;
+  transition: all .6s ease-in;
+  z-index: 2;
+  position: absolute;
+  top: 15rem;
+  right: 61rem;
+  transform: rotate(45deg);
+  background-color: $color-primary-light;
+}
+
+.composition__blob--4 {
+  animation: morph4 4s linear infinite;
+  border-radius: 26% 74% 43% 57% / 25% 26% 74% 75%;
+  height: 40rem;
+  width: 33rem;
+  transition: all .5s linear;
+  z-index: 4;
+  position: absolute;
+  top: 5rem;
+  right: 43rem;
+  background-color: $color-blue;
+}
+
+
+.text-box {
+  margin-top: 50rem;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+      
+      justify-self: center;
+  }
+}
+
+.detail-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+
+  img {
+    margin-bottom: -5rem;
+  }
+}
+
+.full-row {
+  width: 100%;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
