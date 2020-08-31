@@ -1,3 +1,13 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+      @media (max-width: 350px) { @content };
+  }
+
+  @if $breakpoint == tab-land {
+      @media (max-width: 1199px) { @content }; /*1199px*/
+  }
+}
+
 /*Colours*/
 
 $color-grey: #9BA39F;
@@ -40,6 +50,9 @@ h2, h3, h4, h5, h6 {
 
 h2 {
  font-size: 2rem;
+  @include respond(tab-land){
+    font-size: 1.7rem;
+  }
 }
 
 h3 {
@@ -62,32 +75,24 @@ a {
 
 .paragraph {
   margin: 2rem;
+  @include respond(tab-land) {
+    margin: 1rem;
+  }
 }
 
 .heading {
   font-size: 5rem;
+
+  @include respond(tab-land) {
+    font-size: 4rem;
+  }
 }
 
 .subheading {
   font-size: 4rem;
-}
-
-/*Font Awesome*/
-
-.fa-twitter {
-  color: #38A1F3;
-}
-.fa-youtube {
-  color: red;
-}
-.fa-facebook-f {
-  color: #4267b2;
-}
-.fa-github {
-  color: #ccc;
-}
-.fa-linkedin-in {
-  color: #0077B5;
+  @include respond(tab-land) {
+    font-size: 3rem;
+  }
 }
 
 @import "animate.min";

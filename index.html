@@ -6,11 +6,13 @@ page_name: home
 <div class="container">  
   <div class="row full-row" id="home">
     <div class="fade-in">
-      <div class="composition__blob--1"></div>
-      <div class="composition__blob--2"></div>
-      <div class="composition__blob--3"></div>
-      <div class="composition__blob--4"></div>
-      <h1 class="heading">Welcome to Vegan Wheels!</h1>
+      <div class="composition">
+        <div class="composition__blob--1"></div>
+        <div class="composition__blob--2"></div>
+        <div class="composition__blob--3"></div>
+        <div class="composition__blob--4"></div>
+        <h1 class="heading">Welcome to Vegan Wheels!</h1>
+      </div>
       
       <div class="col-12">
           <div class="text-box"> 
@@ -54,5 +56,7 @@ page_name: home
       </div>
     </div>
   </div>
-  {% include footer.html %}
+  <div class="row full-row" id="mob-footer" style="display:none">
+    {% include mob-footer.html %}
+  </div>
 </div>

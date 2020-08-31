@@ -12,7 +12,17 @@
       -webkit-transition: all $time;
 }
 
-.footer {
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media (max-width: 350px) { @content };
+    }
+  
+    @if $breakpoint == tab-land {
+        @media (max-width: 1199px) { @content }; /*1199px*/
+    }
+  }
+
+.lap-footer {
     width: 35rem;
     height: 30rem;
     border-radius: .25rem;
@@ -45,5 +55,23 @@
         display: block;
         @include all-transition(0.3s);
         padding-right: 5rem;
+    }
+}
+
+.mob-footer {
+    width: 100%;
+    // background-color: $color-primary-light;
+    padding: 2rem;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__title {
+        font-weight: bold;
+    }
+    @include respond(phone){
+        height: 120vh;
     }
 }

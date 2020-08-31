@@ -1,3 +1,13 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+      @media (max-width: 350px) { @content };
+  }
+
+  @if $breakpoint == tab-land {
+      @media (max-width: 1199px) { @content }; /*1199px*/
+  }
+}
+
 #coming-soon {
   color: $color-yellow-dark;
   font-size: 5rem;
@@ -5,6 +15,15 @@
   right: 9rem;
   top: 15rem;
   transform: rotate(45deg);
+
+  @include respond(tab-land) {
+    right: 1rem;
+    top: 6rem;
+    font-size: 4rem;
+  }
+  @include respond(phone) {
+    font-size: 3rem;
+  }
 }
 
 .heading {
@@ -14,6 +33,18 @@
   top: 25rem;
   right: 48rem;
   color: $color-black;
+
+  @include respond(tab-land) {
+    width: 27rem;
+    top: 19rem;
+    right: 3rem;
+  }
+  @include respond(phone) {
+    width: 27rem;
+    top: 19rem;
+    right: 0rem;
+    font-size: 3rem;
+  }
 }
 
 .composition__blob--1 {
@@ -28,6 +59,20 @@
   right: 67rem;
   background-color: $color-yellow-medium;
   transform: rotate(45deg);
+
+  @include respond(tab-land) {
+    height: 15rem;
+    width: 15rem;
+    top: 16rem;
+    right: 17rem;
+  }
+
+  @include respond(phone) {
+    height: 10rem;
+    width: 10rem;
+    top: 16rem;
+    right: 18rem;
+  }
 }
 
 .composition__blob--2 {
@@ -42,6 +87,19 @@
   right: 45rem;
   transform: rotate(45deg);
   background-color: $color-red-light;
+
+  @include respond(tab-land) {
+    height: 17rem;
+    width: 18rem;
+    top: 17rem;
+    right: 8rem;
+  }
+  @include respond(phone) {
+    height: 12rem;
+    width: 13rem;
+    top: 15rem;
+    right: 8rem;
+  }
 }
 
 .composition__blob--3 {
@@ -56,6 +114,19 @@
   right: 61rem;
   transform: rotate(45deg);
   background-color: $color-primary-light;
+
+  @include respond(tab-land) {
+    height: 15rem;
+    width: 17rem;
+    top: 21rem;
+    right: 15rem;
+  }
+  @include respond(phone) {
+    height: 14rem;
+    width: 15rem;
+    top: 14rem;
+    right: 10rem;
+  }
 }
 
 .composition__blob--4 {
@@ -69,6 +140,19 @@
   top: 5rem;
   right: 43rem;
   background-color: $color-blue;
+
+  @include respond(tab-land) {
+    height: 20rem;
+    width: 17rem;
+    top: 13rem;
+    right: 5rem;
+  }
+  @include respond(phone) {
+    height: 15rem;
+    width: 12rem;
+    top: 13rem;
+    right: 1rem;
+  }
 }
 
 
@@ -78,6 +162,13 @@
   justify-items: center;
   align-items: center;
   flex-direction: column;
+
+  @include respond(tab-land){
+    margin-top: 40rem;
+  }
+  @include respond(phone){
+    margin-top: 30rem;
+  }
 
   h1 {
       
@@ -95,15 +186,22 @@
 
   img {
     margin-bottom: -5rem;
+    @include respond(tab-land){
+      height: 25rem;
+    }
   }
 }
 
 .full-row {
   width: 100%;
+  @include respond(tab-land) {
+    height: 100vh;
+  }
 }
 
 .section {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 2rem;
 }

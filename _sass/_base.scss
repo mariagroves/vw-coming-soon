@@ -27,4 +27,8 @@ body {
     justify-content: center;
     display: flex;
     flex-direction: column;
+
+    @include respond(tab-land) {
+        width: 100%;
+    }
 }
