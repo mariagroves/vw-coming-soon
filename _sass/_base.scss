@@ -3,6 +3,7 @@
 *::before {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: inherit;
     box-sizing: inherit;
 }
 
@@ -19,6 +20,12 @@ body {
    display: flex;
    flex-direction: column;
    height: 100%;
+   -webkit-box-sizing: border-box;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+    -ms-flex-direction: column;
 }
 
 .container {
@@ -27,6 +34,15 @@ body {
     justify-content: center;
     display: flex;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
 
     @include respond(tab-land) {
         width: 100%;

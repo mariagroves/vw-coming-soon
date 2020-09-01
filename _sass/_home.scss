@@ -15,6 +15,8 @@
   right: 9rem;
   top: 15rem;
   transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
 
   @include respond(tab-land) {
     right: 1rem;
@@ -49,16 +51,21 @@
 
 .composition__blob--1 {
   animation: morph1 7s ease-in-out infinite;
+  -webkit-animation: morph1 7s ease-in-out infinite;
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   height: 30rem;
   width: 30rem;
   transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
   z-index: 6;
   position: absolute;
   top: 9rem;
   right: 67rem;
   background-color: $color-yellow-medium;
   transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
 
   @include respond(tab-land) {
     height: 15rem;
@@ -77,15 +84,20 @@
 
 .composition__blob--2 {
   animation: morph2 5s ease-out infinite;
+  -webkit-animation: morph2 5s ease-out infinite;
   border-radius: 22% 78% 41% 59% / 64% 76% 24% 36%;
   height: 34rem;
   width: 36rem;
   transition: all .5s ease-out;
+  -webkit-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
   z-index: 5;
   position: absolute;
   top: 12rem;
   right: 45rem;
   transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   background-color: $color-red-light;
 
   @include respond(tab-land) {
@@ -104,15 +116,20 @@
 
 .composition__blob--3 {
   animation: morph3 8s ease-in infinite;
+  -webkit-animation: morph3 8s ease-in infinite;
   border-radius: 49% 51% 23% 77% / 54% 57% 43% 46%;
   height: 31rem;
   width: 34rem;
   transition: all .6s ease-in;
+  -webkit-transition: all .6s ease-in;
+  -o-transition: all .6s ease-in;
   z-index: 2;
   position: absolute;
   top: 15rem;
   right: 61rem;
   transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   background-color: $color-primary-light;
 
   @include respond(tab-land) {
@@ -131,10 +148,13 @@
 
 .composition__blob--4 {
   animation: morph4 4s linear infinite;
+  -webkit-animation: morph4 4s linear infinite;
   border-radius: 26% 74% 43% 57% / 25% 26% 74% 75%;
   height: 40rem;
   width: 33rem;
   transition: all .5s linear;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
   z-index: 4;
   position: absolute;
   top: 5rem;
@@ -162,6 +182,13 @@
   justify-items: center;
   align-items: center;
   flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
 
   @include respond(tab-land){
     margin-top: 40rem;
@@ -171,7 +198,7 @@
   }
 
   h1 {
-      
+    -ms-grid-column-align: center;
       justify-self: center;
   }
 }
@@ -183,6 +210,15 @@
   justify-content: center;
   align-items: center;
   margin-top: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
 
   img {
     margin-bottom: -5rem;
@@ -204,4 +240,10 @@
   align-items: center;
   justify-content: center;
   margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
 }

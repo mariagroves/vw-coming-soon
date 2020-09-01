@@ -67,6 +67,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
 
     &__title {
         font-weight: bold;
