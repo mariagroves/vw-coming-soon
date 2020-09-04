@@ -228,13 +228,6 @@
   }
 }
 
-.full-row {
-  width: 100%;
-  @include respond(tab-land) {
-    height: 100vh;
-  }
-}
-
 .section {
   display: flex;
   align-items: center;
